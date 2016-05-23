@@ -1,0 +1,9 @@
+---
+timeout: 180
+instances: 1
+env:
+    SPRING_PROFILES_ACTIVE: cloud
+applications:
+- name: patientDataService
+  path: target/patientDataService-0.0.1-SNAPSHOT.jar
+  services: [ p-mysql, p-rabbitmq ]

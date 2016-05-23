@@ -1,0 +1,1 @@
+create table if not exists patient (id bigint not null auto_increment, active boolean not null, birth_date date not null, gender varchar(10) not null, name varchar(255) not null, phone varchar(15) not null, primary key (id))
